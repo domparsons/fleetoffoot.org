@@ -29,12 +29,7 @@ export default function Information() {
           modified only by adherence to Hampshire FA's adoption of a 3 touch rule.
         </p>
         <p>
-          <a
-            href="https://thewfa.co.uk/laws-of-the-game/"
-            className="link-decoration"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a href="https://thewfa.co.uk/laws-of-the-game/" target="_blank" rel="noreferrer">
             WFA Laws of the Game
           </a>
         </p>
@@ -64,14 +59,8 @@ export default function Information() {
         <p>The Club is affiliated to both the Walking Football Association and Hampshire FA.</p>
         <p>
           For more information or if you would like to join us, contact Robin by email{" "}
-          <a href="mailto:robglen37@yahoo.co.uk" className="link-decoration">
-            here
-          </a>{" "}
-          or text{" "}
-          <a href="sms:+447799664454" className="link-decoration">
-            +447799664454
-          </a>
-          .
+          <a href="mailto:robglen37@yahoo.co.uk">here</a> or text{" "}
+          <a href="sms:+447799664454">+447799664454</a>.
         </p>
       </PageSection>
 
@@ -85,12 +74,7 @@ export default function Information() {
           {sponsors.map((sponsor) => (
             <li key={sponsor.label}>
               {sponsor.href ? (
-                <a
-                  href={sponsor.href}
-                  className="link-decoration"
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                <a href={sponsor.href} target="_blank" rel="noreferrer">
                   {sponsor.label}
                 </a>
               ) : (
@@ -104,18 +88,21 @@ export default function Information() {
       <PageSection title="Club Constitution">
         <a
           href="/files/Club Constitution.pdf"
-          className="document-link"
+          className="card flex w-full max-w-xl items-center gap-4 p-4 no-underline transition-colors hover:border-muted"
           target="_blank"
           rel="noreferrer"
         >
-          <span className="document-icon" aria-hidden="true">
+          <span
+            className="flex h-12 w-12 flex-none items-center justify-center rounded-xl bg-navy text-xs font-bold text-white"
+            aria-hidden="true"
+          >
             PDF
           </span>
-          <span className="document-copy">
-            <span className="document-title">Club Constitution</span>
-            <span className="document-meta">PDF document · 50 KB</span>
+          <span className="flex min-w-0 flex-1 flex-col">
+            <span className="font-semibold text-ink">Club Constitution</span>
+            <span className="text-sm text-muted">PDF document · 50 KB</span>
           </span>
-          <span className="document-action">Open</span>
+          <span className="hidden flex-none text-sm font-medium text-brand sm:inline">Open</span>
         </a>
       </PageSection>
     </>

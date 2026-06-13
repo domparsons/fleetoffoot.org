@@ -63,30 +63,32 @@ export default function AudioPlayer({ src, title }) {
   };
 
   return (
-    <div className="audio-player">
+    <div className="card flex items-center gap-4 p-4 sm:gap-5">
       <audio ref={audioRef} src={src} preload="metadata">
         Your browser does not support the audio element.
       </audio>
 
       <button
         type="button"
-        className="audio-play-button"
+        className="btn btn-primary flex-none px-5"
         aria-label={isPlaying ? `Pause ${title}` : `Play ${title}`}
         onClick={togglePlayback}
       >
         <span aria-hidden="true">{isPlaying ? "Pause" : "Play"}</span>
       </button>
 
-      <div className="audio-player-main">
-        <div className="audio-player-heading">
-          <span className="audio-player-title">{title}</span>
-          <a className="audio-download-link" href={src} download>
+      <div className="flex min-w-0 flex-1 flex-col gap-2.5">
+        <div className="flex items-center justify-between gap-3">
+          <span className="truncate text-base font-semibold text-ink">{title}</span>
+          <a className="text-link flex-none text-sm" href={src} download>
             Download
           </a>
         </div>
 
-        <div className="audio-player-controls">
-          <span className="audio-time">{formatTime(currentTime)}</span>
+        <div className="flex items-center gap-3">
+          <span className="min-w-[42px] text-sm tabular-nums text-muted">
+            {formatTime(currentTime)}
+          </span>
           <input
             type="range"
             className="audio-progress"
@@ -97,7 +99,9 @@ export default function AudioPlayer({ src, title }) {
             aria-label={`Seek ${title}`}
             onChange={handleSeek}
           />
-          <span className="audio-time">{formatTime(duration)}</span>
+          <span className="min-w-[42px] text-right text-sm tabular-nums text-muted">
+            {formatTime(duration)}
+          </span>
         </div>
       </div>
     </div>

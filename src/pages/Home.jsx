@@ -7,23 +7,25 @@ import { carouselImages, homeArticles } from "../data/siteContent.js";
 export default function Home() {
   return (
     <>
-      <section className="landing-introduction">
-        <div className="introduction-image-container">
+      <section className="grid items-center gap-8 md:grid-cols-[1.4fr_1fr] md:gap-12">
+        <div className="order-2 md:order-1">
           <img
             src="/images/championshipGroup/championshipGroup.jpg"
-            className="header-image image"
+            className="w-full rounded-2xl border border-border object-cover shadow-soft"
             alt="Fleet of Foot members at the club championship"
           />
         </div>
-        <div className="introduction-text">
-          <h1>Welcome to Fleet of Foot Walking Football Club</h1>
-          <p>
-            We aim to show you who we are, what we are up to and our plans for the future.
-          </p>
-          <p>
-            Hopefully, you will find something here that you like and that you will want
-            to join in with.
-          </p>
+        <div className="order-1 md:order-2">
+          <h1 className="text-3xl md:text-4xl">
+            Welcome to Fleet of Foot Walking Football Club
+          </h1>
+          <div className="section-prose mt-4">
+            <p>We aim to show you who we are, what we are up to and our plans for the future.</p>
+            <p>
+              Hopefully, you will find something here that you like and that you will want
+              to join in with.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -31,9 +33,11 @@ export default function Home() {
         <AudioPlayer src="/files/song.mp3" title="A Club In Harmony" />
       </PageSection>
 
-      <Carousel images={carouselImages} />
+      <div className="mt-10 border-t border-border pt-10">
+        <Carousel images={carouselImages} />
+      </div>
 
-      <div className="article-list">
+      <div className="mt-12">
         {homeArticles.map((article) => (
           <Article
             key={article.title}
@@ -42,12 +46,12 @@ export default function Home() {
             images={article.images}
           >
             {article.links ? (
-              <div className="link-list">
+              <div className="mt-4 grid gap-1.5">
                 {article.links.map((link) => (
                   <a
                     key={link.href}
                     href={link.href}
-                    className="link-decoration"
+                    className="text-link w-fit"
                     target={link.href.startsWith("http") ? "_blank" : undefined}
                     rel={link.href.startsWith("http") ? "noreferrer" : undefined}
                   >

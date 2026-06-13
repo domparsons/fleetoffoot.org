@@ -1,20 +1,23 @@
 export default function Footer() {
   return (
-    <footer>
-      <div className="footer-contents">
-        <span className="footer-text">Fleet of Foot &copy;</span>
-        <div className="socials">
+    <footer className="mt-20 border-t border-border bg-surface">
+      <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 px-5 py-10 sm:flex-row md:px-8">
+        <div className="flex items-center gap-3">
+          <img src="/images/logo.png" alt="" className="h-8 w-auto" aria-hidden="true" />
+          <span className="text-sm font-medium text-body">Fleet of Foot &copy;</span>
+        </div>
+        <div className="flex items-center">
           <a
             href="https://en-gb.facebook.com/foffoffoff/"
-            className="social-item"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-lg text-muted transition-colors hover:bg-surface-tint hover:text-brand"
             target="_blank"
             rel="noreferrer"
             aria-label="Fleet of Foot on Facebook"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="30"
-              height="30"
+              width="24"
+              height="24"
               viewBox="0 0 24 24"
               fill="currentColor"
               aria-hidden="true"

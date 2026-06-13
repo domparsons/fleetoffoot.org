@@ -23,11 +23,11 @@ export default function Carousel({ images }) {
   };
 
   return (
-    <section className="photo-carousel" aria-label="Club photo carousel">
-      <div className="photo-carousel-viewport">
+    <section className="on-dark" aria-label="Club photo carousel">
+      <div className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-navy shadow-soft sm:aspect-[16/9]">
         <div
           id={carouselId}
-          className="photo-carousel-track"
+          className="flex h-full transition-transform duration-500 ease-out will-change-transform"
           style={{ transform: `translateX(-${current * 100}%)` }}
           aria-live="polite"
         >
@@ -35,15 +35,16 @@ export default function Carousel({ images }) {
             <img
               key={image.src}
               src={image.src}
-              className="photo-carousel-img"
+              className="h-full w-full flex-[0_0_100%] object-cover"
               alt={image.alt}
               loading={index === 0 ? "eager" : "lazy"}
               aria-hidden={index !== current}
             />
           ))}
         </div>
+
         <button
-          className="photo-carousel-btn photo-carousel-prev"
+          className="absolute left-3 top-1/2 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-black/40 text-2xl leading-none text-white transition-colors hover:bg-black/65"
           type="button"
           aria-label="Previous slide"
           aria-controls={carouselId}
@@ -52,7 +53,7 @@ export default function Carousel({ images }) {
           &#8249;
         </button>
         <button
-          className="photo-carousel-btn photo-carousel-next"
+          className="absolute right-3 top-1/2 flex h-11 w-11 -translate-y-1/2 items-center justify-center rounded-full bg-black/40 text-2xl leading-none text-white transition-colors hover:bg-black/65"
           type="button"
           aria-label="Next slide"
           aria-controls={carouselId}
@@ -60,23 +61,33 @@ export default function Carousel({ images }) {
         >
           &#8250;
         </button>
-        <div className="photo-carousel-status" aria-hidden="true">
+
+        <div
+          className="absolute right-3 top-3 rounded-full bg-black/50 px-2.5 py-1 text-xs font-medium tabular-nums text-white"
+          aria-hidden="true"
+        >
           {current + 1} / {total}
         </div>
-        <div className="photo-carousel-controls">
+
+        <div className="absolute inset-x-3 bottom-3 flex items-center gap-3">
           <button
-            className="photo-carousel-play-toggle"
+            className="shrink-0 rounded-full bg-black/55 px-3 py-1.5 text-xs font-medium text-white transition-colors hover:bg-black/75"
             type="button"
             aria-label={isPlaying ? "Pause carousel" : "Play carousel"}
             onClick={() => setIsPlaying((playing) => !playing)}
           >
             {isPlaying ? "Pause" : "Play"}
           </button>
-          <div className="photo-carousel-dots" aria-label="Choose carousel slide">
+          <div
+            className="carousel-dots flex items-center gap-1.5 overflow-x-auto rounded-full bg-black/35 px-2.5 py-2"
+            aria-label="Choose carousel slide"
+          >
             {images.map((image, index) => (
               <button
                 key={image.src}
-                className={`photo-carousel-dot${index === current ? " active-dot" : ""}`}
+                className={`h-2 w-2 shrink-0 rounded-full border border-white/85 transition-colors ${
+                  index === current ? "bg-white" : "bg-transparent hover:bg-white/70"
+                }`}
                 type="button"
                 aria-label={`Show slide ${index + 1}`}
                 aria-current={index === current}

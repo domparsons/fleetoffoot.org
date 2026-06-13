@@ -25,9 +25,15 @@ export default function Women() {
           Our women's section previously saw a boom in numbers and enjoyed sessions,
           tournaments, and away days, including a memorable visit to Portsmouth.
         </p>
-        <div className="gallery-grid">
+        <div className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3">
           {gallery.map((image) => (
-            <img key={image.src} src={image.src} alt={image.alt} className="image" loading="lazy" />
+            <img
+              key={image.src}
+              src={image.src}
+              alt={image.alt}
+              className="aspect-square w-full rounded-2xl border border-border object-cover shadow-card transition-transform duration-300 hover:scale-[1.02]"
+              loading="lazy"
+            />
           ))}
         </div>
       </PageSection>
