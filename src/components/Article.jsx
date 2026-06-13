@@ -1,9 +1,12 @@
-export default function Article({ title, paragraphs = [], images = [], children }) {
+export default function Article({
+  title,
+  paragraphs = [],
+  images = [],
+  children,
+}) {
   return (
-    <article className="mt-10 border-t border-border pt-10 first:mt-0 first:border-0 first:pt-0">
-      {title ? (
-        <h2 className="text-2xl md:text-3xl">{title}</h2>
-      ) : null}
+    <article className="card p-6 md:p-8">
+      {title ? <h3 className="text-2xl text-ink">{title}</h3> : null}
       <div className="mt-3 space-y-4 text-base leading-relaxed text-body md:text-lg">
         {paragraphs.map((paragraph) => (
           <p key={paragraph}>{paragraph}</p>
@@ -21,7 +24,7 @@ export default function Article({ title, paragraphs = [], images = [], children 
               key={image.src}
               src={image.src}
               alt={image.alt}
-              className="w-full rounded-2xl border border-border object-cover shadow-card"
+              className="w-full rounded-xl border border-border object-cover"
               loading="lazy"
             />
           ))}

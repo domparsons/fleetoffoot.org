@@ -79,7 +79,9 @@ export default function AudioPlayer({ src, title }) {
 
       <div className="flex min-w-0 flex-1 flex-col gap-2.5">
         <div className="flex items-center justify-between gap-3">
-          <span className="truncate text-base font-semibold text-ink">{title}</span>
+          <span className="truncate text-base font-semibold text-ink">
+            {title}
+          </span>
           <a className="text-link flex-none text-sm" href={src} download>
             Download
           </a>

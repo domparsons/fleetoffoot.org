@@ -33,7 +33,10 @@ createRoot(document.getElementById("root")).render(
         <Route element={<AppLayout />}>
           <Route index element={<Home />} />
           <Route path="information" element={<Information />} />
-          <Route path="information.html" element={<LegacyRedirect to="/information" />} />
+          <Route
+            path="information.html"
+            element={<LegacyRedirect to="/information" />}
+          />
           <Route path="annual-tournament" element={<AnnualTournament />} />
           <Route
             path="annual-tournament.html"

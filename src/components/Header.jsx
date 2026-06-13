@@ -17,7 +17,9 @@ const desktopLinkClass = ({ isActive }) =>
 const mobileLinkClass = ({ isActive }) =>
   [
     "block rounded-lg px-3 py-3 text-base font-medium transition-colors",
-    isActive ? "bg-surface-tint text-ink font-semibold" : "text-body hover:bg-surface-tint hover:text-ink",
+    isActive
+      ? "bg-surface-tint text-ink font-semibold"
+      : "text-body hover:bg-surface-tint hover:text-ink",
   ].join(" ");
 
 export default function Header() {
@@ -36,13 +38,21 @@ export default function Header() {
         aria-label="Primary navigation"
       >
         <NavLink to="/" className="shrink-0" onClick={() => setIsOpen(false)}>
-          <img src="/images/logo.png" alt="Fleet of Foot" className="h-8 w-auto md:h-10" />
+          <img
+            src="/images/logo.png"
+            alt="Fleet of Foot"
+            className="h-8 w-auto md:h-10"
+          />
         </NavLink>
 
         <ul className="hidden items-center gap-8 md:flex">
           {links.map((link) => (
             <li key={link.to}>
-              <NavLink to={link.to} className={desktopLinkClass} end={link.to === "/"}>
+              <NavLink
+                to={link.to}
+                className={desktopLinkClass}
+                end={link.to === "/"}
+              >
                 {link.label}
               </NavLink>
             </li>

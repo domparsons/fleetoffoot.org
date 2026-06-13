@@ -16,4 +16,3 @@ for (const item of ["images", "files", "CNAME"]) {
 if (existsSync(join(root, "public", "404.html"))) {
   cpSync(join(root, "public", "404.html"), join(dist, "404.html"));
 }
-

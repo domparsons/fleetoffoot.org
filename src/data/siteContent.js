@@ -1,27 +1,78 @@
 export const carouselImages = [
-  { src: "/images/carousel/IMG-20260528-WA0000.jpg", alt: "Fleet of Foot players together at a recent session" },
-  { src: "/images/carousel/IMG_0852.JPG", alt: "Fleet of Foot match day group photo" },
-  { src: "/images/carousel/IMG_1274.JPG", alt: "Club members gathered outdoors" },
-  { src: "/images/carousel/016.JPG", alt: "Walking football players on the pitch" },
+  {
+    src: "/images/carousel/IMG-20260528-WA0000.jpg",
+    alt: "Fleet of Foot players together at a recent session",
+  },
+  {
+    src: "/images/carousel/IMG_0852.JPG",
+    alt: "Fleet of Foot match day group photo",
+  },
+  {
+    src: "/images/carousel/IMG_1274.JPG",
+    alt: "Club members gathered outdoors",
+  },
+  {
+    src: "/images/carousel/016.JPG",
+    alt: "Walking football players on the pitch",
+  },
   { src: "/images/carousel/IMG_1873.jpg", alt: "Fleet of Foot squad photo" },
   { src: "/images/carousel/IMG_2059.JPG", alt: "Club members at a tournament" },
   { src: "/images/carousel/IMG_0349.jpg", alt: "Walking football team lineup" },
-  { src: "/images/carousel/87196673-5503-4db5-a393-018fd61081be.JPG", alt: "Fleet of Foot members after a game" },
-  { src: "/images/carousel/20180525_163446.JPG", alt: "Players during a Fleet of Foot event" },
+  {
+    src: "/images/carousel/87196673-5503-4db5-a393-018fd61081be.JPG",
+    alt: "Fleet of Foot members after a game",
+  },
+  {
+    src: "/images/carousel/20180525_163446.JPG",
+    alt: "Players during a Fleet of Foot event",
+  },
   { src: "/images/2022/2022-2.jpg", alt: "Fleet of Foot members in 2022" },
-  { src: "/images/2022/2022-3.jpg", alt: "Fleet of Foot members after a 2022 session" },
-  { src: "/images/2022/2022-1.jpg", alt: "Fleet of Foot players in action in 2022" },
+  {
+    src: "/images/2022/2022-3.jpg",
+    alt: "Fleet of Foot members after a 2022 session",
+  },
+  {
+    src: "/images/2022/2022-1.jpg",
+    alt: "Fleet of Foot players in action in 2022",
+  },
   { src: "/images/cup-capers-3.jpg", alt: "Fleet of Foot 65 plus cup squad" },
   { src: "/images/cup-report.jpg", alt: "Fleet of Foot 70 plus cup squad" },
-  { src: "/images/methodshift/methodshift.JPG", alt: "Fleet of Foot players modelling the Methodshift kit" },
-  { src: "/images/portsmouth70+/portsmouth70+.jpg", alt: "Fleet of Foot at the Portsmouth 70 plus tournament" },
-  { src: "/images/homepage-gallery/image1.jpg", alt: "Fleet of Foot gallery photo" },
-  { src: "/images/homepage-gallery/image2.jpg", alt: "Fleet of Foot team photo" },
-  { src: "/images/homepage-gallery/image3.jpg", alt: "Club players on the pitch" },
-  { src: "/images/homepage-gallery/image4.jpg", alt: "Fleet of Foot members outdoors" },
-  { src: "/images/homepage-gallery/image5.jpg", alt: "Fleet of Foot match photo" },
-  { src: "/images/homepage-gallery/image6.jpg", alt: "Walking football team members" },
-  { src: "/images/homepage-gallery/image7.jpg", alt: "Fleet of Foot players at Hart Leisure Centre" },
+  {
+    src: "/images/methodshift/methodshift.JPG",
+    alt: "Fleet of Foot players modelling the Methodshift kit",
+  },
+  {
+    src: "/images/portsmouth70+/portsmouth70+.jpg",
+    alt: "Fleet of Foot at the Portsmouth 70 plus tournament",
+  },
+  {
+    src: "/images/homepage-gallery/image1.jpg",
+    alt: "Fleet of Foot gallery photo",
+  },
+  {
+    src: "/images/homepage-gallery/image2.jpg",
+    alt: "Fleet of Foot team photo",
+  },
+  {
+    src: "/images/homepage-gallery/image3.jpg",
+    alt: "Club players on the pitch",
+  },
+  {
+    src: "/images/homepage-gallery/image4.jpg",
+    alt: "Fleet of Foot members outdoors",
+  },
+  {
+    src: "/images/homepage-gallery/image5.jpg",
+    alt: "Fleet of Foot match photo",
+  },
+  {
+    src: "/images/homepage-gallery/image6.jpg",
+    alt: "Walking football team members",
+  },
+  {
+    src: "/images/homepage-gallery/image7.jpg",
+    alt: "Fleet of Foot players at Hart Leisure Centre",
+  },
   { src: "/images/image0.jpeg", alt: "Fleet of Foot club photo" },
   { src: "/images/image1.jpeg", alt: "Fleet of Foot players together" },
   { src: "/images/1000058499.jpg", alt: "Fleet of Foot club update photo" },
@@ -44,7 +95,9 @@ export const homeArticles = [
       "Our 70 + squad bowed out in round 2 of the national cup going down 1 - 2 in a closely contested game against a powerful AFC Bournemouth side. Fleet took the lead from an angled shot by John Brumwell and it took a powerful late effort from distance to eventually beat us.",
       "Squad members were Adrian Bunting, Alan Bortnik, Martin Osborn, Pat Lenehan, Robin Howard, John Brumwell, Alan Vickery.",
     ],
-    images: [{ src: "/images/cup-report.jpg", alt: "Fleet of Foot 70 plus cup squad" }],
+    images: [
+      { src: "/images/cup-report.jpg", alt: "Fleet of Foot 70 plus cup squad" },
+    ],
   },
   {
     title: "Cup Capers 2024",
@@ -56,9 +109,18 @@ export const homeArticles = [
       "Our 60+ squad would have beaten Cove had it not been for outstanding goalkeeping by former member Paul Samways. All in all, a fine effort from Fleet boding well for the future.",
     ],
     images: [
-      { src: "/images/cup-capers-3.jpg", alt: "Fleet of Foot 65 plus cup squad" },
-      { src: "/images/cup-capers.jpg", alt: "Fleet of Foot 70 plus cup squad after the Rivermead match" },
-      { src: "/images/cup-capers-2.jpg", alt: "Fleet of Foot 60 plus cup squad" },
+      {
+        src: "/images/cup-capers-3.jpg",
+        alt: "Fleet of Foot 65 plus cup squad",
+      },
+      {
+        src: "/images/cup-capers.jpg",
+        alt: "Fleet of Foot 70 plus cup squad after the Rivermead match",
+      },
+      {
+        src: "/images/cup-capers-2.jpg",
+        alt: "Fleet of Foot 60 plus cup squad",
+      },
     ],
   },
   {
@@ -68,11 +130,22 @@ export const homeArticles = [
       "Modelled below by a selection of our junior members, this alternative kit will be available for any FoF squads playing in leagues or tournaments.",
       "Methodshift is an innovative software and consultancy company dedicated to helping data-driven software development teams unlock their full potential.",
     ],
-    images: [{ src: "/images/methodshift/methodshift.JPG", alt: "Fleet of Foot players modelling the Methodshift kit" }],
+    images: [
+      {
+        src: "/images/methodshift/methodshift.JPG",
+        alt: "Fleet of Foot players modelling the Methodshift kit",
+      },
+    ],
     links: [
       { href: "https://www.methodshift.co.uk/", label: "methodshift.co.uk" },
-      { href: "https://www.methodshift.co.uk/mission-control/", label: "Mission Control" },
-      { href: "mailto:mark@methodshift.co.uk", label: "mark@methodshift.co.uk" },
+      {
+        href: "https://www.methodshift.co.uk/mission-control/",
+        label: "Mission Control",
+      },
+      {
+        href: "mailto:mark@methodshift.co.uk",
+        label: "mark@methodshift.co.uk",
+      },
     ],
   },
   {
@@ -86,9 +159,15 @@ export const homeArticles = [
   {
     title: "2022 Members in action and inaction",
     images: [
-      { src: "/images/2022/2022-1.jpg", alt: "Fleet of Foot members in action in 2022" },
+      {
+        src: "/images/2022/2022-1.jpg",
+        alt: "Fleet of Foot members in action in 2022",
+      },
       { src: "/images/2022/2022-2.jpg", alt: "Fleet of Foot 2022 club photo" },
-      { src: "/images/2022/2022-3.jpg", alt: "Fleet of Foot players after a 2022 session" },
+      {
+        src: "/images/2022/2022-3.jpg",
+        alt: "Fleet of Foot players after a 2022 session",
+      },
     ],
   },
   {
@@ -111,20 +190,67 @@ export const homeArticles = [
       "Congratulations to Sue and Elaine on their selection for the South 50+ Ladies squad. They join South East 70+ and England 75+ Men's squad member Adrian.",
       "Sue and Elaine both described selection as a dream come true and another proud moment for Fleet of Foot.",
     ],
-    images: [{ src: "/images/womens/sueElaine1.png", alt: "Sue and Elaine after South 50 plus Ladies squad selection" }],
+    images: [
+      {
+        src: "/images/womens/sueElaine1.png",
+        alt: "Sue and Elaine after South 50 plus Ladies squad selection",
+      },
+    ],
   },
   {
     title: "Portsmouth 70+ Tournament",
     paragraphs: [
       "Peter, Will, Alan and Rob after a day out at Portsmouth's 70+ annual tournament. A good tan was had by all.",
     ],
-    images: [{ src: "/images/portsmouth70+/portsmouth70+.jpg", alt: "Fleet of Foot at the Portsmouth 70 plus tournament" }],
+    images: [
+      {
+        src: "/images/portsmouth70+/portsmouth70+.jpg",
+        alt: "Fleet of Foot at the Portsmouth 70 plus tournament",
+      },
+    ],
+  },
+];
+
+// --- Stage 2 homepage sections ---------------------------------------------
+// Values are verbatim from the Information page; labels/blurbs are drawn from
+// the club's own content (Information page + match reports above).
+
+export const homeStats = [
+  { value: "2017", label: "Playing since" }, // "We first started playing in 2017"
+  { value: "£4", label: "Per session" }, //     "Each session carries a £4 attendance fee"
+  { value: "£10", label: "Annual membership" }, // "£10 membership fee" / "£10 annual renewal"
+  { value: "3G", label: "Outdoor pitches" }, //  "We play exclusively outdoors on 3G surfaces"
+];
+
+// Session day + time + place are verbatim from the Information page.
+export const sessions = [
+  { day: "Tuesday", time: "2pm start", place: "Normally on the main pitch." },
+  { day: "Thursday", time: "2pm start", place: "Usually in one of the cages." },
+];
+
+// Contact values are verbatim from the Information page.
+export const contactMethods = [
+  {
+    label: "Email Robin",
+    value: "robglen37@yahoo.co.uk",
+    href: "mailto:robglen37@yahoo.co.uk",
+  },
+  {
+    label: "Call or text",
+    value: "+44 7799 664454",
+    href: "sms:+447799664454",
   },
 ];
 
 export const sponsors = [
-  { href: "https://www.specsavers.co.uk/stores/fleet", label: "Specsavers, Fleet" },
+  {
+    href: "https://www.specsavers.co.uk/stores/fleet",
+    label: "Specsavers, Fleet",
+  },
   { href: "https://www.everyoneactive.com", label: "Everyone Active" },
-  { href: "https://www.exchequercrookham.co.uk", label: "The Exchequer, Crookham Village" },
+  {
+    href: "https://www.exchequercrookham.co.uk",
+    label: "The Exchequer, Crookham Village",
+  },
   { label: "RM Carpets" },
 ];
