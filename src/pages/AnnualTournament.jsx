@@ -3,10 +3,10 @@ import PageSection from "../components/PageSection.jsx";
 export default function AnnualTournament() {
   return (
     <>
-      <div className="article-image-container top-image">
+      <div className="mb-10">
         <img
           src="/images/championshipGroup/championshipGroup.jpg"
-          className="header-image image"
+          className="w-full rounded-2xl border border-border object-cover shadow-soft"
           alt="Fleet of Foot members at the club championship"
         />
       </div>
